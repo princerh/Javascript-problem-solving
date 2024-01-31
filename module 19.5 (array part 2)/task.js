@@ -39,7 +39,8 @@ for(let i=0; i < strings.length; i++){
 console.log("Output",empty);
 
 
-// Task 4 
+// Task 4
+// step 1 
 const strings2 = 'I am a hard working person';
 console.log("Input: ",strings2);
 let words = strings2.split(' ');
@@ -48,3 +49,7 @@ for( const word of words){
     reversedString = word + ' ' + reversedString;
 }
 console.log("Output: ",reversedString);
+
+// step 2
+let reversedString2 = strings2.split(' ').reverse().join(' ')
+console.log("Output: ",reversedString2);
