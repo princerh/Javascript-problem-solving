@@ -34,7 +34,7 @@ let empty = '';
 var strings = ['Tom', 'Tim', 'Tin', 'Tik'];
 console.log("Input: ",strings)
 for(let i=0; i < strings.length; i++){
-     empty = empty + strings[i];
+     let full = empty + strings[i];
 }
 console.log("Output",empty);
 
@@ -53,3 +53,26 @@ console.log("Output: ",reversedString);
 // step 2
 let reversedString2 = strings2.split(' ').reverse().join(' ')
 console.log("Output: ",reversedString2);
+
+
+for(let i=0; i<=100; i++){
+    console.log("Sorry Babu...!",i);
+}
+
+function getMenu() {
+    console.log("Burger, Pizza, Pasta");
+   }
+   getMenu()
+
+   
+
+let ret = Math.ceil(-7.004)
+console.log(ret);
+
+let a = 5;
+let b = 'Hello';
+
+[a, b] = [b, a];
+
+console.log(a); // Output: 'Hello'
+console.log(b); // Output: 5
