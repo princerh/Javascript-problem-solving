@@ -121,3 +121,35 @@ function canPay(array, number){
     }
 }
 console.log(canPay([],10));
+
+for (let i = 2; i <= 100; i++) {
+    // Check if the square root of the current number is an integer
+    if (Number.isInteger(Math.sqrt(i))) {
+        console.log("Encountered the first square number:", i);
+        break; // Stop the loop when the first square number is found
+    }
+}
+for(let i = 2; i<=100; i++){
+    if(i*i <=100) {console.log(i); break;}
+}
+
+const friends = ["Reazul", "Hasan", "Prince", "peal", "Shakil", "udoy"]
+function propertyCount(friends){
+    let count = 0;
+    let min = friends[0];
+    let smallfriend = [];
+    for(const friend of friends){
+        if(friend.length < min.length){
+            min = friend;
+        }
+    }
+    
+    for(const friend of friends){
+        if(friend.length === min.length){
+            smallfriend.push(friend);
+        }
+    }
+    console.log(smallfriend);
+}
+
+propertyCount(friends)
